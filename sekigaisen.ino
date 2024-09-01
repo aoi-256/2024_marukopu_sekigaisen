@@ -27,7 +27,7 @@ void loop() {
   }
   else{
 
-    digitalWrite(4, LOW);v
+    digitalWrite(4, LOW);
 
   }
 }
