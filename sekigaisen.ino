@@ -16,14 +16,18 @@ void loop() {
 
   //Serial.println(sekigaisen_value); //アナログ変換値を出力(デバッグ用）
 
+  
   if(sekigaisen_value >= 3500.0){
 
     digitalWrite(4, HIGH);  
 
+    //赤外線を検知した場合、すぐに消えてしまうとLEDが光っているかを見れないので、ちょっとだけつけっぱなしにする
+    delay(1000)
+
   }
   else{
 
-    digitalWrite(4, LOW);
+    digitalWrite(4, LOW);v
 
   }
 }
